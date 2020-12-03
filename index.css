@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.btn {
+    color:hsl(0, 0%, 100%);
+    background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(73,193,104,1) 40%, rgba(43,183,218,1) 100%);
+    border-radius: 3rem !important;
+    
+}
+
+.btn:hover {
+    opacity: 0.6;
+    transition: 0.3s
+}
+
+
+.botao {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    background-color: hsl(0, 0%, 100%);
+    z-index: 3;
+    padding: 1% !important;
+}
+.nav-link {
+    border-bottom: 5px solid white;
+    
+}
+
+.nav-link:hover {
+    border-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan)) 1 stretch;
+    
+}
+
+
+ul {
+    margin: 0 auto;
+}
+
+
+/*Primeira sessão*/
+.session-1 {
+    height: 70vh;
+    background-image: url('images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position-x: 150%;
+    background-position-y: 30%;
+    background-color: hsl(0, 0%, 98%);
+       
+}
+
+
+.text-1 {
+    width: 390px;
+    margin: 20% 0 0 40%;   
+}
+
+.text-1 h1 {
+    margin-bottom: 6%;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.text-1 p {
+    margin-bottom: 10%;
+    font-size: 18px;
+}
+
+.img-1 img {
+    position: absolute;
+    max-width: 100% !important;
+    max-height: auto;
+    top: -25%;
+    left: 35%;
+}
+
+/* Segunda sessão*/
+.session-2 {
+    background-color: hsl(220, 16%, 96%);
+    padding-bottom: 10%;
+}
+
+
+.text-2 {
+    max-width: 600px;
+    margin: 10% 0 8% 0;
+    
+}
+
+.card {
+    border-style: none;
+    
+}
+
+.card-header {
+    border-bottom: none !important;
+    padding: 0 !important;
+    background-color: hsl(220, 16%, 96%) !important;
+}
+
+.card-body {
+    background-color: hsl(220, 16%, 96%);
+}
+
+#icone {
+    width: 70px;
+}
+
+.card p {
+    margin-top: 10%;
+}
+
+.card a {
+    color: slategray;
+}
+
+/*Terceira sessão*/
+.session-3 {
+ padding-bottom: 10%;
+ background-color: hsl(0, 0%, 98%);
+}
+
+.text-3 {
+    margin: 10% 0 5% 0;
+}
+
+.card-body a:hover {
+    text-decoration: none;
+    color: hsl(136, 65%, 51%);
+}
+
+/*Quarta sessão*/
+
+.session-4 {
+    background-color: hsl(233, 26%, 24%) ;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 3%;
+    padding-top: 5%;
+}
+
+.social-media a {
+    margin-right: 3%;
+}
+
+
+.button-and-rights {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 0 !important;
+    
+}
+
+.links a {
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.links a:hover {
+    color: hsl(136, 65%, 51%);
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 375px) {
+
+    .session-1 {
+        background-image: url('images/image-mockups.png'), url("images/bg-intro-mobile.svg");
+        background-position: top center;
+        background-size: contain;  
+        height: 120vh;
+    }
+
+
+    .text-1 {
+        text-align: center;
+        width: 350px;
+        margin-top: 150% ;
+        
+        
+    }
+
+    .container-fluid {
+        padding-right: 0 !important;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .container {
+        display: none;
+    }
+
+    .session-2 {
+        text-align: center;
+        padding: 0;
+    }
+
+    .session-3 {
+        text-align: center;
+    }
+
+    .session-4 {
+        text-align: center;
+    }
+
+    .links {
+        margin-top: 8%;
+    }
+
+    .session-4 button, p {
+        margin: 0 auto;
+        margin-top: 8%;
+    }
+
+    .attribution {
+        display: none;
+    }
+   
+    
+}
+
+
+@media (max-width: 650px) {
+    
+    .text-1 {
+        margin-left: 0;
+    }
+
+    .container-fluid {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 990px){
+    .botao {
+        display: none;
+    }
+
+    .navbar-toggler {
+        border: none !important;
+        margin-left: 80%;
+        position: absolute;
+        top: 5px;
+    }
+
+    .session-2 {
+        text-align: center;
+    }
+
+    .session-3 {
+        text-align: center;
+    }
+
+    .session-4 {
+        text-align: center;
+    }
+
+    .links {
+        margin-top: 8%;
+    }
+
+    .session-4 button, p {
+        margin: 0 auto;
+        margin-top: 8%;
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+    
+    .text-1 {
+        margin-left: 5px;
+    }
+}
